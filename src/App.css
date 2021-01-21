@@ -5,6 +5,7 @@
    margin: 0;
    box-sizing: border-box;
    font-family: "Roboto", sans-serif;
+   overflow: hidden;
 }
 
 :root {
@@ -98,3 +99,24 @@
 }
 
 /* End of Forms */
+
+/*  Button Styling */
+
+.btn-white {
+   border: none;
+   background-color: white;
+   padding: 12px 30px;
+   border-radius: 5px;
+   font-size: 1.4rem;
+}
+
+.btn-grey {
+   border: none;
+   background-color: grey;
+   color: white;
+   padding: 12px 30px;
+   border-radius: 5px;
+   font-size: 1.4rem;
+}
+
+/* End of Button styling */

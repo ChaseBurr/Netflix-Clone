@@ -4,6 +4,7 @@ import { HashRouter as Router, Switch, Route } from "react-router-dom";
 // Pages
 import LandingPage from "./Pages/LandingPage";
 import Login from "./Pages/Login";
+import Browse from "./Pages/Browse";
 
 // CSS imports
 import "./App.css";
@@ -17,6 +18,7 @@ function App() {
             <Switch>
                <Route exact path="/" component={LandingPage} />
                <Route exact path="/login" component={Login} />
+               <Route exact path="/browse" component={Browse} />
             </Switch>
          </Router>
       </div>
