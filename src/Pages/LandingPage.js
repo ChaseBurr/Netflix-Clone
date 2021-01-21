@@ -5,10 +5,16 @@ function LandingPage() {
    return (
       <div className="landingPage">
          <div className="landing-page-header">
-            <div className="landing-page-logo">
-               <img src="/Netflix-Clone/images/netflix-logo-1.png" alt="logo" />
-            </div>
-            <Button className="landing-page-button-login" text="Sign in" />
+            <img
+               src="/Netflix-Clone/images/netflix-logo-1.png"
+               alt=""
+               className="top-logo"
+            />
+            <Button
+               className="landing-page-button-login"
+               text="Sign in"
+               link="/login"
+            />
          </div>
          <div className="our-story-page landing-page-hero">
             <div className="overlay"></div>
