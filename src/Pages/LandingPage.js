@@ -4,9 +4,9 @@ import Button from "../Components/Buttons/Button";
 function LandingPage() {
    return (
       <div className="landingPage">
-         <div className=" landing-page-header">
+         <div className="landing-page-header">
             <div className="landing-page-logo">
-               <img src="/images/netflix-logo-1.png" alt="logo" />
+               <img src="/Netflix-Clone/images/netflix-logo-1.png" alt="logo" />
             </div>
             <Button className="landing-page-button-login" text="Sign in" />
          </div>
@@ -36,7 +36,7 @@ function LandingPage() {
                </h3>
             </div>
             <div className="tv-image">
-               <img src="/images/tv.png" alt="" />
+               <img src="/Netflix-Clone/images/tv.png" alt="" />
             </div>
          </div>
          <div className="our-story-page"></div>
