@@ -26,7 +26,7 @@ function Login() {
                   <b>Sign up now</b>
                </Link>
             </p>
-            <Link to="/home">Click here for Demo</Link>
+            <Link to="/browse">Click here for Demo</Link>
          </FormCenter>
       </div>
    );
