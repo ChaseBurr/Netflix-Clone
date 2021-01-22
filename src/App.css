@@ -5,12 +5,17 @@
    margin: 0;
    box-sizing: border-box;
    font-family: "Roboto", sans-serif;
-   overflow: hidden;
+   list-style: none;
+   overflow-x: hidden;
 }
 
 :root {
    --primary-red: #dd0611;
    --form-background-dark: #333333;
+}
+
+body {
+   background-color: #141414;
 }
 
 /* Reusable styling */
@@ -105,7 +110,7 @@
 .btn-white {
    border: none;
    background-color: white;
-   padding: 12px 30px;
+   padding: 12px 20px;
    border-radius: 5px;
    font-size: 1.4rem;
 }
@@ -114,7 +119,7 @@
    border: none;
    background-color: grey;
    color: white;
-   padding: 12px 30px;
+   padding: 12px 20px;
    border-radius: 5px;
    font-size: 1.4rem;
 }
