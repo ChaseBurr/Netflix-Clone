@@ -20,6 +20,7 @@ function Browse() {
       <>
          <div className="browser-hero">
             <div className="background-film"></div>
+            <div className="overlay"></div>
             <div className="browser-navbar">
                <img
                   src="/Netflix-Clone/images/netflix-logo-1.png"
@@ -54,13 +55,19 @@ function Browse() {
                      <Link to="/browse/dvd">DVD</Link>
                   </li>
                   <li>
-                     <Link to="/">present</Link>
+                     <Link to="/">
+                        <i className="fas fa-gift"></i>
+                     </Link>
                   </li>
                   <li>
-                     <Link to="/">notification</Link>
+                     <Link to="/">
+                        <i className="fas fa-bell"></i>
+                     </Link>
                   </li>
                   <li>
-                     <Link to="/">profile</Link>
+                     <Link to="/">
+                        <i className="fas fa-user"></i>
+                     </Link>
                   </li>
                </ul>
             </div>
