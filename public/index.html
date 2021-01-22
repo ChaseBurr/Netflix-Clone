@@ -21,13 +21,17 @@
       <div id="root"></div>
       <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
       <script>
-         new Glider(document.querySelector(".glider"), {
-            slidesToShow: 3,
-            dots: "#dots",
-            arrows: {
-               prev: ".glider-prev",
-               next: ".glider-next",
-            },
+         window.addEventListener("load", function () {
+            if (document.querySelector(".glider") !== null) {
+               new Glider(document.querySelector(".glider"), {
+                  slidesToShow: 2,
+                  draggable: true,
+                  arrows: {
+                     prev: ".glider-prev",
+                     next: ".glider-next",
+                  },
+               });
+            }
          });
       </script>
    </body>
