@@ -125,3 +125,10 @@ body {
 }
 
 /* End of Button styling */
+
+.glider,
+#dots,
+.glider-prev,
+.glider-next {
+   z-index: 100;
+}

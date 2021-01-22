@@ -233,7 +233,6 @@
 
 .shows {
    display: flex;
-   flex-wrap: wrap;
 }
 
 /* End of Browse page styling */

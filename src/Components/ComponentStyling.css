@@ -16,7 +16,7 @@
 
 .movie-list {
    margin: 0 auto;
-   width: 90%;
+   width: 95%;
 }
 
 .movie-list h1 {
@@ -36,10 +36,11 @@
    background-color: green;
    overflow: hidden;
    border-radius: 5px;
+   flex-shrink: 0;
 }
 
 .movie-card:not(:last-child) {
-   margin-right: 5px;
+   margin-right: 7px;
 }
 
 .movie-card img {
