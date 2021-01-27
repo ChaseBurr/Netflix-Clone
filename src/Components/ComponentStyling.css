@@ -17,6 +17,7 @@
 .movie-list {
    margin: 0 auto;
    width: 95%;
+   margin-bottom: 50px;
 }
 
 .movie-list h1 {
