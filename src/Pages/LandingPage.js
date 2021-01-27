@@ -28,7 +28,7 @@ function LandingPage() {
                   membership.
                </h4>
                <form>
-                  <input type="text" Placeholder="Email Address" />
+                  <input type="text" placeholder="Email Address" />
                   <button>GET STARTED</button>
                </form>
             </div>
