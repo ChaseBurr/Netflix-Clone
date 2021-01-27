@@ -99,6 +99,21 @@ function Browse() {
                   <div>Loading...</div>
                )}
             </ShowList>
+            <ShowList header="Most Watched">
+               {popularData ? (
+                  popularData.map((movie, index) => {
+                     if (movie.backdrop_path)
+                        return (
+                           <MovieCard
+                              imgSrc={movie.backdrop_path}
+                              key={index}
+                           />
+                        );
+                  })
+               ) : (
+                  <div>Loading...</div>
+               )}
+            </ShowList>
          </div>
       </>
    );
