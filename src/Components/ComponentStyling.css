@@ -30,8 +30,8 @@
 /* Movie Cards */
 
 .movie-card {
-   width: 290px;
-   height: 160px;
+   width: 290px !important;
+   height: 160px !important;
    position: relative;
    background-color: green;
    overflow: hidden;
@@ -46,6 +46,22 @@
 .movie-card img {
    width: 100%;
    height: 100%;
+}
+
+.glider-arrow-right,
+.glider-arrow-left {
+   background-color: rgba(0, 0, 0, 0.7);
+   width: 30px;
+   height: 164px;
+   margin-top: -18px;
+}
+
+.glider-arrow-right {
+   right: 0;
+}
+
+.glider-arrow-left {
+   left: 0;
 }
 
 /* End of Movie Cards */

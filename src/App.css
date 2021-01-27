@@ -6,7 +6,6 @@
    box-sizing: border-box;
    font-family: "Roboto", sans-serif;
    list-style: none;
-   overflow-x: hidden;
 }
 
 :root {
@@ -16,6 +15,7 @@
 
 body {
    background-color: #141414;
+   overflow-x: hidden;
 }
 
 /* Reusable styling */
@@ -131,4 +131,7 @@ body {
 .glider-prev,
 .glider-next {
    z-index: 100;
+}
+
+.glider-contain {
 }
