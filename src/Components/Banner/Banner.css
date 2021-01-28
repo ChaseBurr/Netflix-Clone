@@ -21,9 +21,9 @@
 
 .banner__description {
    width: 45rem;
-   line-height: 1.3;
+   line-height: 1.5;
    padding-top: 1rem;
-   font-size: 1rem;
+   font-size: 1.1rem;
    max-width: 800px;
    height: 100px;
 }
