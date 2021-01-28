@@ -60,3 +60,25 @@
    );
    z-index: 5;
 }
+
+/* Mobile responsiveness */
+
+@media only screen and (max-width: 400px) {
+   .banner {
+      height: 70vh;
+   }
+
+   .banner__contents {
+      padding-top: 130px;
+   }
+   .banner__title {
+      font-size: 2rem;
+      margin-bottom: 10px;
+   }
+   .banner__description {
+      max-width: 340px;
+   }
+   .banner__button {
+      padding: 10px 30px;
+   }
+}
