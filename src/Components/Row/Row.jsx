@@ -9,7 +9,7 @@ const base_url = "https://image.tmdb.org/t/p/original";
 function Row({ title, fetchUrl, isLargeRow }) {
    const [movies, setMovies] = useState([]);
    const [trailerUrl, setTrailerUrl] = useState("");
-   let rowNumber = Math.floor(Math.random() * 20);
+   let rowNumber = Math.floor(Math.random() * 100);
 
    useEffect(() => {
       async function fetchData() {
