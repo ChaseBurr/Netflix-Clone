@@ -82,3 +82,38 @@
       padding: 10px 30px;
    }
 }
+
+@media only screen and (max-width: 415px) {
+   .banner {
+      height: 70vh;
+   }
+
+   .banner__contents {
+      padding-top: 130px;
+   }
+   .banner__title {
+      font-size: 2rem;
+      margin-bottom: 10px;
+   }
+   .banner__description {
+      max-width: 340px;
+      font-size: 1rem;
+   }
+   .banner__button {
+      padding: 10px 30px;
+   }
+}
+
+@media only screen and (max-width: 375px) {
+   .banner__description {
+      max-width: 300px;
+      font-size: 1rem;
+   }
+}
+
+@media only screen and (max-width: 320px) {
+   .banner__description {
+      max-width: 300px;
+      font-size: 1rem;
+   }
+}

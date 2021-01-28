@@ -93,3 +93,35 @@
       display: none;
    }
 }
+
+@media only screen and (max-width: 415px) {
+   .row,
+   .row h2 {
+      margin-top: 1rem;
+   }
+
+   .row {
+      margin-bottom: 1rem;
+   }
+
+   .slide__left,
+   .slide__right {
+      display: none;
+   }
+}
+
+@media only screen and (max-width: 320px) {
+   .row,
+   .row h2 {
+      margin-top: 1rem;
+   }
+
+   .row {
+      margin-bottom: 1rem;
+   }
+
+   .slide__left,
+   .slide__right {
+      display: none;
+   }
+}
