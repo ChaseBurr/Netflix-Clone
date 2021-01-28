@@ -9,6 +9,7 @@ const base_url = "https://image.tmdb.org/t/p/original";
 function Row({ title, fetchUrl, isLargeRow }) {
    const [movies, setMovies] = useState([]);
    const [trailerUrl, setTrailerUrl] = useState("");
+   let rowNumber = Math.floor(Math.random() * 20);
 
    useEffect(() => {
       async function fetchData() {
@@ -46,21 +47,47 @@ function Row({ title, fetchUrl, isLargeRow }) {
          <h2>{title}</h2>
 
          {/* Container -> posters */}
-         <div className="row__posters">
+         <div className={`row__posters row_${rowNumber}`}>
+            <button
+               className={
+                  isLargeRow ? "slide__left slide__left__large" : "slide__left"
+               }
+               onClick={() => {
+                  document.querySelector(`.row_${rowNumber}`).scrollLeft -= 200;
+               }}
+            >
+               <i className="fas fa-arrow-left"></i>
+            </button>
+
             {/* Posters */}
-            {movies.map((movie) => (
-               <img
-                  key={movie.id}
-                  onClick={() => handleClick(movie)}
-                  className={`row__poster${
-                     isLargeRow ? " row__poster__large" : ""
-                  }`}
-                  src={`${base_url}${
-                     isLargeRow ? movie.poster_path : movie.backdrop_path
-                  }`}
-                  alt={movie.name}
-               />
-            ))}
+            {movies.map(
+               (movie) =>
+                  movie.poster_path && (
+                     <img
+                        key={movie.id}
+                        onClick={() => handleClick(movie)}
+                        className={`row__poster${
+                           isLargeRow ? " row__poster__large" : ""
+                        }`}
+                        src={`${base_url}${
+                           isLargeRow ? movie.poster_path : movie.backdrop_path
+                        }`}
+                        alt={movie.name}
+                     />
+                  )
+            )}
+            <button
+               className={
+                  isLargeRow
+                     ? "slide__right slide__right__large"
+                     : "slide__right"
+               }
+               onClick={() => {
+                  document.querySelector(`.row_${rowNumber}`).scrollLeft += 500;
+               }}
+            >
+               <i className="fas fa-arrow-right"></i>
+            </button>
          </div>
          {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
       </div>
