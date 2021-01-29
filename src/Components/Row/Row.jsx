@@ -53,7 +53,9 @@ function Row({ title, fetchUrl, isLargeRow }) {
                   isLargeRow ? "slide__left slide__left__large" : "slide__left"
                }
                onClick={() => {
-                  document.querySelector(`.row_${rowNumber}`).scrollLeft -= 200;
+                  document.querySelector(
+                     `.row_${rowNumber}`
+                  ).scrollLeft -= 1000;
                }}
             >
                <i className="fas fa-arrow-left"></i>
@@ -83,7 +85,9 @@ function Row({ title, fetchUrl, isLargeRow }) {
                      : "slide__right"
                }
                onClick={() => {
-                  document.querySelector(`.row_${rowNumber}`).scrollLeft += 500;
+                  document.querySelector(
+                     `.row_${rowNumber}`
+                  ).scrollLeft += 1000;
                }}
             >
                <i className="fas fa-arrow-right"></i>
